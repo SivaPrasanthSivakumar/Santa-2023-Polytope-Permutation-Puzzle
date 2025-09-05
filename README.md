@@ -14,6 +14,25 @@ For more details, see the [Kaggle competition page](https://www.kaggle.com/compe
 - Example algorithms and code for educational and research purposes
 - Modular and extensible codebase
 
+## Requirements
+
+- Python 3.8 or higher
+- pandas
+- numpy
+- tqdm
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+or manually:
+
+```bash
+pip install pandas numpy tqdm
+```
+
 ## Getting Started
 
 1. **Clone the repository:**
@@ -24,17 +43,28 @@ For more details, see the [Kaggle competition page](https://www.kaggle.com/compe
    ```bash
    cd "d:\My files\NJCU\Spring 2024\CS4041299 Artificial Intelligence\Santa\santa"
    ```
-3. **Install dependencies:**
-
-   - (Add instructions here, e.g., `pip install -r requirements.txt` or `npm install`)
+3. **Install dependencies:**  
+   See the Requirements section above.
 
 4. **Run the application:**
-   - (Add instructions here, e.g., `python main.py` or `npm start`)
+   ```bash
+   python main.py
+   ```
+   _(Replace `main.py` with your entry script if different.)_
 
 ## Usage
 
-- (Describe how to use the application, run demos, or execute scripts.)
-- You can download sample puzzles and data from the [Kaggle competition data page](https://www.kaggle.com/competitions/santa-2023/data).
+- Download sample puzzles and data from the [Kaggle competition data page](https://www.kaggle.com/competitions/santa-2023/data).
+- Place the data files in the project directory.
+- Run the main script to solve puzzles and generate a submission file.
+- Example:
+  ```bash
+  python main.py --input puzzles.csv --output submission.csv
+  ```
+- For more options, see the script's help:
+  ```bash
+  python main.py --help
+  ```
 
 ## Code Structure
 
@@ -52,10 +82,11 @@ This project provides code to solve the Santa Polytope Permutation Puzzle by fin
 
 The main script loads data, parses puzzle status, solves the puzzles, and saves the submission file.
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 ## References
 
 - [Santa 2023 Kaggle Competition](https://www.kaggle.com/competitions/santa-2023/overview)
+- [Kaggle Data Page](https://www.kaggle.com/competitions/santa-2023/data)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
